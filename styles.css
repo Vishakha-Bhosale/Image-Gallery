@@ -1,7 +1,13 @@
 body{
     font-family: "Lato", sans-serif;
+    background-color: black;
     margin: 0px;
     padding: 10px;
+}
+.about{
+    color:rosybrown; 
+    padding:50px;
+    
 }
 .container{
     display: grid;
@@ -14,6 +20,18 @@ body{
 }
 .left-side{
     display: flex;
+}
+.right-side{
+    display: flex;
+}
+.footer{
+    left:0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    padding: 5px;
+    position: relative;
 }
 .nav-wrapper > .left-side > div{
     margin-right: 20px;
@@ -40,10 +58,17 @@ body{
 .nav-link-wrapper a:hover{
     border-bottom: black;
 }
+
+
+.subtitle{
+    font-size: 12px;
+    text-align: justify;
+}
 /*Portfolio style*/
 .portfolio-items-wrapper{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .portfolio-item-wrapper
@@ -77,20 +102,25 @@ body{
     width: 50%;
     margin-bottom: 20px;
 }
+.portfolio-animal-wrapper{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 /*more specific*/
 .img-text-wrapper .subtitle{
     transition: 1s;
-    font-weight: 600;
-    color: transparent;
+    font-weight: 500;
+    color:transparent;
 }
 .img-text-wrapper:hover .subtitle{
     font-weight: 600;
-    color: goldenrod;
+    color: #90CAF9;
 }
 .img-darken{
     transition: 1s;
-    filter: brightness(10%);
+    filter: brightness(20%);
 }
 
 

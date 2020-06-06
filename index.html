@@ -13,16 +13,19 @@
                     <a href="index.html">Home</a>
                 </div>
                 <div class="nav-link-wrapper">
+                    <a href="animal.html">Animals</a>
+                </div> 
+                <div class="nav-link-wrapper">
                     <a href="birds.html">Birds</a>
                 </div>   
                 <div class="nav-link-wrapper">
-                    <a href="animal.html">Animals</a>
-                </div>   
+                    <a href="flowers.html">Flowers</a>
+                </div>     
             </div>
 
             <div class="right-side">
-                <div class="brand">
-                    <div>Vishakha </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
                 </div>
             </div>
 
@@ -35,39 +38,40 @@
                     
                     <div class="Animals"></div>
                     <div class="img-text-wrapper">
-                        <div class="subtitle">Animals</div>
+                        <div class="subtitle"><h2>Animals</h2><h4>Click to visit Animal Gallery</h4></div>
                     </div>
                 </div> 
                 <div class="portfolio-item-wrapper" onclick="location.href='birds.html';" style="cursor: pointer;"> 
                     <div class="Birds"></div>
                     <div class="img-text-wrapper">
-                        <div class="subtitle">Birds</div>
+                        <div class="subtitle"><h2>Birds</h2><h4>Click to visit Birds Gallery</h4></div>
                     </div>
                 </div> 
-                <div class="portfolio-item-wrapper" onclick="location.href='animal.html';" style="cursor: pointer;"> 
+                <div class="portfolio-item-wrapper" onclick="location.href='flowers.html';" style="cursor: pointer;"> 
                     <div class="Flowers"></div>
                     <div class="img-text-wrapper">
-                        <div class="subtitle">Flowers</div>
+                        <div class="subtitle"><h2>Flowers</h2><h4>Click to visit Flower Gallery</h4></div>
                     </div>
                 </div> 
-                <div class="portfolio-item-wrapper" onclick="location.href='animal.html';" style="cursor: pointer;"> 
+                <div class="portfolio-item-wrapper" onclick="location.href='fruits.html';" style="cursor: pointer;"> 
                     <div class="fruits"></div>
                     <div class="img-text-wrapper">
-                        <div class="subtitle">Fruits</div>
+                        <div class="subtitle"><h2>Fruits</h2><h4>Click to visit Fruits Gallery</h4></div>
                     </div>
                 </div> 
                
-                <div class="portfolio-item-wrapper" onclick="location.href='animal.html';" style="cursor: pointer;"> 
+                <!-- <div class="portfolio-item-wrapper" onclick="location.href='animal.html';" style="cursor: pointer;"> 
                     <div class="insects"> </div>
                     <div class="img-text-wrapper">
-                        <div class="subtitle">Insects</div>
+                        <div class="subtitle"><h2>Insects</h2><h4>Click to visit Insects Gallery</h4></div>
                     </div>
-                </div> 
+                </div>  -->
                 
             </div>
         </div> 
 
     </div> 
+    <div class="footer">Created by Vishakha Bhosale.</div>
 </body>
 <script>
     const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
@@ -75,6 +79,7 @@
     portfolioItems.forEach(portfolioItem => {
         portfolioItem.addEventListener('mouseover', () => {
         portfolioItem.childNodes[1].classList.add('img-darken');
+        console.log(portfolioItem);
   })
 
     portfolioItem.addEventListener('mouseout', () => {
